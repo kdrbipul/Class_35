@@ -1,0 +1,58 @@
+#country{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 2rem;
+    padding: 1.5rem;
+}
+
+#country-details{
+    text-align: center;
+}
+
+.country-info{
+    background-color: beige;
+    padding: 2rem;
+    border: 1px solid tomato;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+
+/* media queries part start here */
+@media only screen and (min-width:1px) and (max-width:319px){
+    #country{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 2rem;
+    }
+}
+@media only screen and (min-width:320px) and (max-width:480px){
+    #country{
+        display: grid;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        gap: 2rem;
+    }
+}
+@media only screen and (min-width:481px) and (max-width:768px){
+    #country{
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 2rem;
+    }
+}
+@media only screen and (min-width:769px) and (max-width:1024px){
+    #country{
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 2rem;
+    }
+}
+@media only screen and (min-width:1025px) and (max-width:1200px){
+    #country{
+        display: grid;
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        gap: 2rem;
+    }
+}
+
+/* media queries part end here */
